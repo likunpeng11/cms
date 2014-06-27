@@ -18,7 +18,9 @@
     </head>
     <body>
         <div>
-            <div>用户名：${user.username}</div>
+            <div>用户名：${userForm.username}</div>
+            <div>密码：${userForm.password}</div>
+            <div>验证码：${userForm.captcha}</div>
             <div><a href="${ctx}/userList">用户列表</a></div>
         </div>
     </body>
