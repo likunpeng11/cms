@@ -15,3 +15,14 @@ CREATE TABLE `c_user` (
   KEY `idx_user_gender` (`gender`),
   KEY `idx_user_created_time` (`created_time`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `c_menu` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) NOT NULL DEFAULT '',
+  `url` varchar(32) NOT NULL DEFAULT '',
+  `orderView` int(11) NOT NULL DEFAULT 0,
+  `valid` int(11) NOT NULL DEFAULT 0,
+  `memo` varchar(32) NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
